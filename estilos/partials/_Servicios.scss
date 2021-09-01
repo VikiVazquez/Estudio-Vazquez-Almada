@@ -9,13 +9,15 @@
 #card3{ width: 60em;
         margin: 10px 0px 20px 20px;
         padding:10px 0px 20px 20px;
+        border-radius: 10px;
+        box-shadow: $grisMedio -5px 0px 7px;
 }
 
 .pSecc3{@extend.pBajada2;
         margin: 5px 0px 5px 10px;
         padding: 2px;
         color: $grisMedio; 
-        font-size: $pSecc2;
+        font-size: $tbajadas;
         letter-spacing: normal;
         text-indent:20px;
         }
