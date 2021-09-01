@@ -1,0 +1,45 @@
+@import "./variables";
+
+.fondoT3{ @extend.fondoT2;
+    background-image: url(./imagenes/servicios.jpg);
+    background-position: top;
+    opacity: 90%;
+    }
+
+#card3{ width: 60em;
+        margin: 10px 0px 20px 20px;
+        padding:10px 0px 20px 20px;
+}
+
+.pSecc3{@extend.pBajada2;
+        margin: 5px 0px 5px 10px;
+        padding: 2px;
+        color: $grisMedio; 
+        font-size: $pSecc2;
+        letter-spacing: normal;
+        text-indent:20px;
+        }
+
+.listas3{list-style-type:disc; 
+        text-align: left;
+        margin:5px 5px 5px 10px;
+        }
+
+ 
+.botones { padding: 7px;
+            border: 2px solid $grisMedio;
+            border-radius: 3px;
+            background-color: $blanco; 
+            color: $grisMedio; 
+            font-style: normal; 
+            font-size: $pSecc2; 
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: 1px;
+            text-align: center; 
+            text-transform: initial;
+            margin:auto;}
+    
+.botones:hover{ background-color: $grisMedio;
+                color:$blanco;
+                border: 1px solid  $grisMedio;
+    }

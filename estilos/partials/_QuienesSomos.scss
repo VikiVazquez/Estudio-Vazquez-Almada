@@ -1,0 +1,36 @@
+@import "./variables";
+
+
+.fondoT2{ background-image: url(./imagenes/quienes-somos.jpg);
+                height: $hFondoTitulo; 
+                width: 100%;
+                background-position: center;
+                opacity: 60%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+
+#card {width: 20rem; 
+        height: 35rem;
+        margin: 20px 0px 20px 0px;
+        border-radius: 10px;
+        box-shadow: $grisMedio -5px 0px 7px;
+
+   }
+
+#nombresSec2{ width: 14em;
+                margin: 5px 0px 5px 0px;
+                padding: 3px 0px 10px 0px;
+                font-size: $tbajadas;
+                color: $Bordo;
+                font-family: 'Nunito', sans-serif;
+                text-indent:10px;
+                text-align: left; 
+                letter-spacing: 1px;
+                border-bottom:solid 1px $Bordo}
+
+#img2{transform: translateX(19px);
+    width: 280px; 
+    height: 280px;
+    margin-top: 7px;
+}

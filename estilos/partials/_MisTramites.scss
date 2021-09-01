@@ -1,0 +1,25 @@
+@import "./variables";
+
+
+.fondoT4{ @extend.fondoT2;
+    background-image: url(./imagenes/tramites.jpg);
+    background-position: bottom;
+        }
+
+#Form4{width:30em ;
+        margin: auto;
+        padding: 40px;
+}
+#olvide{font-size: 13px;
+        font-weight: 50;
+        color: $grisMedio;
+        margin: 10px;
+        padding: 6px;
+        font-family: 'Nunito', sans-serif;
+}
+#pSecc4{
+    color: $grisMedio;
+    font-size: $pSecc2; 
+    font-family: 'Nunito', sans-serif;
+    text-indent:20px;
+    }

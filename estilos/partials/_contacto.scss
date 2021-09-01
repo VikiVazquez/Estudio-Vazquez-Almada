@@ -1,0 +1,23 @@
+@import "./variables";
+
+
+.fondoT5{ @extend.fondoT2;
+    background-image: url(./imagenes/contacto.jpg);
+    background-position: bottom;
+    }
+
+#Form5{width:30em ;
+        margin: auto;
+        padding: 40px;
+}
+#cajaMsj{width: 100%;
+        border: none;
+
+}
+.cbotones5{margin: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+} 

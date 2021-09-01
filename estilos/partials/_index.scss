@@ -1,0 +1,103 @@
+@import "./variables";
+
+
+#primerFondo{ background-color: $grisClaro ;
+    height: $hHeader; 
+    width: 100%;
+    border-bottom: 3px solid $Bordo ;}
+
+.fondoSlogan{ background-image: url(./imagenes/agrimensura.jpg);
+        height: 40em;
+        opacity: 60%;
+        background-size:cover ;
+        background-position: top;
+        background-repeat: no-repeat;
+        }
+
+.slogan {margin-left: 35px ;
+            padding-top: 25px;
+            padding-left:15px ;
+            border: 1px;
+            font-style: normal; 
+            font-size: 45px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            color: $grisOscuro; 
+            letter-spacing: 2px; 
+            text-align: left;
+            display: flex; 
+            justify-content: start;
+            align-items: flex-start;
+        }
+.pSecc1{margin-left:35px ;
+            padding-top: 25px;
+            padding-left:14px;
+            border: 1px;
+            width: 26em;
+            display: flex; 
+            justify-content: start;
+            align-items: flex-start;
+            color: $grisOscuro;  
+            font-style: normal; 
+            font-size: 25px; 
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: normal;
+            text-align: left; 
+            text-transform: initial; 
+            line-height: normal;
+            text-indent:30px;}
+
+.Footer1{height: 15em;
+        width: 100%;
+        border-top: 5px solid $Bordo;
+        background: linear-gradient(to bottom, $grisMedio, $grisOscuro);}
+
+
+.F1Logo{padding: 6px;
+            border: 1px;
+            color: $blanco; 
+            font-style: normal; 
+            font-size: $pSecc2;
+            font-weight: bold;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            letter-spacing: 3px;
+            word-spacing: 2px;
+            text-align: center;
+            }
+
+.F1Subtitulo{margin: 3px;
+                padding: 6px;
+                border: 1px;
+                color: $blanco; 
+                font-style: normal; 
+                font-size: 12px;
+                font-weight: lighter;
+                font-family: 'Nunito', sans-serif;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                text-align: center;
+            }
+
+       
+.F1Datos{
+        margin-top: 15px;
+        padding: 3px;
+        border: 1px;
+        color: $blanco; 
+        font-style: normal; 
+        font-size: 10px;
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center;}
+
+
+
+.Mapa{margin-left:80px;
+        margin-top: 20px;
+        width: 19em;
+        height: 12em;
+        overflow: hidden;
+
+}
