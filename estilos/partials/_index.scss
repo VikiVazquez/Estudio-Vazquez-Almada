@@ -3,8 +3,7 @@
 
 #primerFondo{ background-color: $grisClaro ;
     height: $hHeader; 
-    width: 100%;
-    border-bottom: 3px solid $Bordo ;}
+    width: 100%;}
 
 .fondoSlogan{ background-image: url(./imagenes/agrimensura.jpg);
         height: 40em;
@@ -34,12 +33,9 @@
             padding-left:14px;
             border: 1px;
             width: 26em;
-            display: flex; 
-            justify-content: start;
-            align-items: flex-start;
             color: $grisOscuro;  
             font-style: normal; 
-            font-size: 25px; 
+            font-size: 23px; 
             font-family: 'Nunito', sans-serif;
             letter-spacing: normal;
             text-align: left; 

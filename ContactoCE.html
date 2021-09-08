@@ -13,31 +13,31 @@
   </head>
   <body>
     <header>
-        <nav id="SegundoFondo" class="navbar navbar-expand-md navbar-light">
-          <div id= cajaMain class="container-fluid ">
-            <a class="navbar-brand" href="indexTE.html">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
               <h1 class="logo" >Estudio Vázquez-Almada</h1>
               <p class="subtitulo">Agrimensura y Gestoría</p>
             </a>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="textoNav"class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
              <ul class="navbar-nav align-items-end">
                 <li class="nav-item ">
-                  <a class="nav-link " href="indexCE.html">Inicio</a>
+                  <a id="textoNav" class="nav-link " href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="QuienesSomosCE.html">Quienes Somos</a>
+                    <a id="textoNav" class="nav-link " href="QuienesSomosCE.html">Quienes Somos</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="ServiciosCE.html">Servicios</a>
+                    <a id="textoNav" class="nav-link " href="ServiciosCE.html">Servicios</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="MisTramitesCE.html">Mis Tramites</a>
+                    <a id="textoNav" class="nav-link " href="MisTramitesCE.html">Mis Tramites</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="ContactoCE.html">Contacto</a>
+                    <a id="textoNav" class="nav-link " href="ContactoCE.html">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -45,35 +45,41 @@
         </nav>                  
     </header>
     <main class="fondoTotal2">
-      <div class="container-fluid">
+      <div id= cajaMain class="container-fluid">
         <h1 class="tseccion2 fondoT5">Contacto</h1>
-        <p class="pBajada2">Si queres saber más sobre nuestros servicios, dejanos tu conacto para que podamos enviarte mas información </p>
+        <p class="pBajada2">Si queres saber más sobre nuestros servicios, dejanos tu contacto para que podamos enviarte mas información </p>
       </div>
-        <form id="Form5">
-            <div class="form-group">
-              <label id="pSecc2" for="Nombre">Nombre y Apellido</label>
-              <input type="name" class="form-control" id="Nombre" aria-describedby="emailHelp" >
-            </div>
-            <div class="form-group">
-                <label id="pSecc2" for="correo" >E-mail</label>
-                <input class="form-control" type="email" required name="correo" id="correo">
-            </div>
-            <div>
-                <label id="pSecc2" for="Celular" >Celular</label>
-                <input class="form-control" type="tel" required name="Celular" id="Celular">
-            </div>
-            <div id="cajaMsj" >
-                <label id="pSecc2" for="Mensaje" >Mensaje</label>
-                <textarea  class="col-12" name="mensaje" id="mensaje" rows="10"></textarea>
-            </div>    
-            <div class="cbotones5">
-                <input type="submit" value="Enviar" class="botones botones:hover">
-                <input type="reset" value="Limpiar" class="botones botones:hover">
-            </div> 
-          </form>
+      <div class="container">
+        <div class="row align-items-center align-content-around justify-content-around">
+          <div class="col-md-12 col-lg-8">
+              <form >
+                  <div class="form-group">
+                    <label id="pSecc5" for="Nombre">Nombre y Apellido</label>
+                    <input type="name" class="form-control" id="Nombre" aria-describedby="emailHelp" >
+                  </div>
+                  <div class="form-group">
+                      <label id="pSecc5" for="correo" >E-mail</label>
+                      <input class="form-control" type="email" required name="correo" id="correo">
+                  </div>
+                  <div>
+                      <label id="pSecc5" for="Celular" >Celular</label>
+                      <input class="form-control" type="tel" required name="Celular" id="Celular">
+                  </div>
+                  <div id="cajaMsj" >
+                      <label id="pSecc5" for="Mensaje" >Mensaje</label>
+                      <textarea  class="col-12" name="mensaje" id="mensaje" rows="10"></textarea>
+                  </div>    
+                  <div class="cbotones5">
+                      <input type="submit" value="Enviar" class="botones botones:hover">
+                      <input type="reset" value="Limpiar" class="botones botones:hover">
+                  </div> 
+              </form>
+          </div>
+        </div> 
+      </div>           
     </main>
     <footer class="Footer2">
-        <div class="container-fluid">
+        <div  class="container-fluid">
             <div class="row align-items-center align-content-around justify-content-around">
                 <div class="col-12 ">
                      <p class="F2Logo">Estudio Vázquez-Almada </p>
@@ -83,7 +89,7 @@
             <div class="row align-items-center justify-content-center">
                 <p class="F2Datos col-sm-12 col-xl-3">E-mail: estudioalmadavazquez@gmail.com</p>
                 <p class="F2Datos col-sm-12 col-xl-3">Celular: 221-222-2222</p>
-                <p class="F2Datos col-sm-12 col-xl-6"> Ubicación: Calle 3 N° 1713 e/67 y 68 - La Plata</p>
+                <p class="F2Datos col-sm-12 col-xl-3"> Ubicación: Calle 3 N° 1713 e/67 y 68 - La Plata</p>
             </div>
         </div>
     </footer>

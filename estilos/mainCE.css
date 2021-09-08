@@ -3,7 +3,6 @@
   background-color: #e9e3e3;
   height: 7em;
   width: 100%;
-  border-bottom: 3px solid #c55252;
 }
 
 .fondoSlogan {
@@ -55,7 +54,7 @@
           align-items: flex-start;
   color: #413e3e;
   font-style: normal;
-  font-size: 25px;
+  font-size: 23px;
   font-family: 'Nunito', sans-serif;
   letter-spacing: normal;
   text-align: left;
@@ -148,7 +147,7 @@
   color: #c55252;
   font-family: 'Nunito', sans-serif;
   text-indent: 10px;
-  text-align: left;
+  text-align: center;
   letter-spacing: 1px;
   border-bottom: solid 1px #c55252;
 }
@@ -168,34 +167,52 @@
 }
 
 #card3 {
-  width: 60em;
-  margin: 10px 0px 20px 20px;
-  padding: 10px 0px 20px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: #807676 -5px 0px 7px;
+          box-shadow: #807676 -5px 0px 7px;
+}
+
+#nombresSec3 {
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+  padding: 3px 0px 10px 0px;
+  font-size: 20px;
+  color: #c55252;
+  font-family: 'Nunito', sans-serif;
+  text-indent: 10px;
+  text-align: left;
+  letter-spacing: 1px;
+  border-bottom: solid 2px #c55252;
 }
 
 .pSecc3 {
-  margin: 5px 0px 5px 10px;
-  padding: 2px;
+  margin: 5px 5px 5px 10px;
+  padding: 20px;
+  line-height: 35px;
   color: #807676;
-  font-size: 18px;
-  letter-spacing: normal;
-  text-indent: 20px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1.1px;
+  word-spacing: 1.5px;
+  text-transform: initial;
 }
 
 .listas3 {
+  padding-left: 10px;
+  letter-spacing: normal;
   list-style-type: disc;
   text-align: left;
-  margin: 5px 5px 5px 10px;
+  font-size: 18px;
 }
 
 .botones {
+  margin: 7px;
   padding: 7px;
   border: 2px solid #807676;
   border-radius: 3px;
   background-color: white;
   color: #807676;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Nunito', sans-serif;
   letter-spacing: 1px;
   text-align: center;
@@ -215,23 +232,20 @@
 }
 
 #Form4 {
-  width: 30em;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
 }
 
 #olvide {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 50;
   color: #807676;
-  margin: 10px;
-  padding: 6px;
+  margin: 20px;
+  padding: 10px 6px 10px 6px;
   font-family: 'Nunito', sans-serif;
 }
 
 #pSecc4 {
-  color: #807676;
-  font-size: 18px;
   font-family: 'Nunito', sans-serif;
   text-indent: 20px;
 }
@@ -241,15 +255,13 @@
   background-position: bottom;
 }
 
-#Form5 {
-  width: 30em;
-  margin: auto;
-  padding: 40px;
-}
-
-#cajaMsj {
-  width: 100%;
-  border: none;
+#pSecc5 {
+  margin: 3px;
+  padding: 12px 3px 0px 3px;
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  color: #807676;
 }
 
 .cbotones5 {
@@ -283,13 +295,6 @@
 }
 
 /*NAVEGACIÓN EN SECCIONES*/
-#SegundoFondo {
-  background-color: white;
-  height: 7em;
-  width: 100%;
-  border: 3px solid #c55252;
-}
-
 .logo {
   margin: 7px 3px 1px 25px;
   padding: 3px;
@@ -318,7 +323,7 @@
 }
 
 #textoNav {
-  color: #413e3e;
+  color: #807676;
   font-style: normal;
   font-size: 18px;
   font-weight: 500;
@@ -357,23 +362,24 @@
   text-shadow: #413e3e -5px 0px 4px;
 }
 
-.pBajada2, .pSecc3, #pSecc2 {
-  margin: 70px auto 70px auto;
+.pBajada2, #pSecc2 {
+  margin: 70px auto 50px auto;
   padding: 30px;
   border: 1px;
   color: #807676;
   font-style: normal;
   font-size: 20px;
   font-family: 'Nunito', sans-serif;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  text-align: left;
+  letter-spacing: 1.1px;
+  word-spacing: 1.5px;
+  text-align: center;
   text-transform: initial;
-  line-height: 30px;
-  text-indent: 30px;
+  line-height: 35px;
+  text-indent: 35px;
 }
 
 #pSecc2 {
+  width: 100%;
   margin: 3px;
   padding: 12px 3px 0px 3px;
   color: #807676;
@@ -384,7 +390,7 @@
 
 /*FOOTER SECCIONES*/
 .Footer2 {
-  height: 7em;
+  height: 10em;
 }
 
 .F2Logo {
@@ -397,8 +403,8 @@
 }
 
 .F2Datos {
-  margin: 25px;
-  padding: 10px;
+  margin: 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 /*RESPONSIVE*/
@@ -451,11 +457,8 @@
     margin: 10px 0px 1px 0px;
   }
   .Mapa {
-    margin-left: 17px;
+    margin: 10px 0px 17px 17px;
     width: 16em;
-  }
-  .fondoTitulo2 {
-    height: 3.5em;
   }
   .tseccion2 {
     font-size: 30px;
@@ -463,21 +466,170 @@
   .tseccion3 {
     font-size: 30px;
   }
-  .pBajada2, .pSecc3, #pSecc2 {
-    font-size: 13px;
-    width: 22em;
-    padding: 15px;
-    margin-top: auto;
-    margin-bottom: 10px;
+  .fondoTitulo2 {
+    height: 3.5em;
+  }
+  .fondoTitulo3 {
+    height: 3.5em;
+  }
+  .fondoTitulo4 {
+    height: 3.5em;
+  }
+  .fondoTitulo5 {
+    height: 3.5em;
+  }
+  .pBajada2, #pSecc2 {
+    width: 21em;
+    padding: 25px 10px 25px 0px;
+    margin: 15px 10px 15px 20px;
+    line-height: 25px;
+    text-align: left;
+    font-size: 14px;
+  }
+  #pSecc2 {
+    width: 100%;
+    margin: 3px;
+    padding: 12px 3px 0px 0px;
+    color: #807676;
+    font-size: 15px;
+    text-align: center;
   }
   #card {
-    margin: 3px;
-    padding: 15px 1px 15px 1px;
+    margin: 3px 0px 3px 0px;
+    padding: 15px 1px 25px 1px;
   }
   #card3 {
     margin: auto;
     padding: 5px;
     width: 17em;
+  }
+  .pSecc3 {
+    margin: 5px 0px 5px 5px;
+    padding: 2px;
+    font-style: normal;
+    font-size: 13.5px;
+    text-align: left;
+    text-indent: 0px;
+    width: 17em;
+    line-height: 18px;
+  }
+  .listas3 {
+    list-style-type: disc;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+    padding: 2px;
+    font-size: 13.5px;
+  }
+  #nombresSec2 {
+    width: 14em;
+    margin: 5px 0px 5px 0px;
+    padding: 3px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-indent: 0px;
+    text-align: center;
+  }
+  #pSecc4 {
+    font-size: 15px;
+    text-indent: 5px;
+  }
+  #Form4 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .cbotones5 {
+    margin: 0px;
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .botones {
+    padding: 7px;
+    border: 2px solid #807676;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .Footer2 {
+    height: 15em;
+  }
+  .F2Logo {
+    font-size: 12.5px;
+    margin: 35px 3px 3px 0px;
+    padding: 4px;
+    text-align: left;
+  }
+  .F2Subtitulo {
+    font-size: 11px;
+    margin: 3px 3px 10px 0px;
+    padding: 4px 4px 10px 4px;
+    text-align: left;
+  }
+  .F2Datos {
+    margin: 4px 4px 4px 11px;
+    padding: 4px;
+    text-align: left;
+  }
+}
+
+/* 375 px*/
+@media only screen and (width: 375px) {
+  .logo {
+    margin: 7px 0px 1px 2px;
+    padding: 3px;
+    font-size: 16px;
+  }
+  .subtitulo {
+    margin: 1px 0px 5px 2px;
+    padding: 3px;
+    font-size: 13px;
+    word-spacing: 1px;
+  }
+  .tseccion2 {
+    font-size: 30px;
+  }
+  .tseccion3 {
+    font-size: 30px;
+  }
+  .fondoTitulo2 {
+    height: 3.5em;
+  }
+  .fondoTitulo3 {
+    height: 3.5em;
+  }
+  .fondoTitulo4 {
+    height: 3.5em;
+  }
+  .fondoTitulo5 {
+    height: 3.5em;
+  }
+  .pBajada2, #pSecc2 {
+    font-size: 15px;
+    width: 22em;
+    padding: 25px 15px 15px 15px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    line-height: 25px;
+    text-align: left;
+  }
+  #pSecc2 {
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+  }
+  .botones {
+    padding: 7px;
+    border: 2px solid #807676;
+    border-radius: 3px;
+    font-size: 13px;
   }
   .Footer2 {
     height: 15em;
@@ -488,67 +640,64 @@
   }
 }
 
-.subtitulo3 {
-  margin: 5px;
-  padding: 3px;
-  font-size: 15px;
-}
-
-.pSecc3 {
-  margin: 5px 0px 5px 10px;
-  padding: 2px;
-  color: #807676;
-  font-style: normal;
-  font-size: 12px;
-}
-
-#Form4 {
-  width: 21em;
-}
-
-#Form5 {
-  width: 21em;
-  margin: auto;
-  padding: 20px;
-}
-
-#cajaMsj {
-  width: 100%;
-}
-
-.fondoTitulo3 {
-  height: 3.5em;
-}
-
-.fondoTitulo4 {
-  height: 3.5em;
-}
-
-.fondoTitulo5 {
-  height: 3.5em;
-}
-
-.cbotones5 {
-  margin: 0px;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
-.botones {
-  padding: 7px;
-  border: 2px solid #807676;
-  border-radius: 3px;
-  font-size: 15px;
+/* 425 px*/
+@media only screen and (width: 425px) {
+  .logo {
+    margin: 7px 0px 1px 2px;
+    padding: 3px;
+    font-size: 18px;
+  }
+  .subtitulo {
+    margin: 1px 0px 5px 2px;
+    padding: 3px;
+    font-size: 13px;
+    word-spacing: 1px;
+  }
+  .tseccion2 {
+    font-size: 38px;
+  }
+  .tseccion3 {
+    font-size: 38px;
+  }
+  .fondoTitulo2 {
+    height: 3.5em;
+  }
+  .fondoTitulo3 {
+    height: 3.5em;
+  }
+  .fondoTitulo4 {
+    height: 3.5em;
+  }
+  .fondoTitulo5 {
+    height: 3.5em;
+  }
+  .pBajada2, #pSecc2 {
+    font-size: 17px;
+    width: 22.5em;
+    padding: 25px 15px 15px 15px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: left;
+  }
+  #pSecc2 {
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+  }
+  .botones {
+    padding: 7px;
+    border: 2px solid #807676;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  .Footer2 {
+    height: 15em;
+  }
+  .F2Datos {
+    margin: 6px;
+    padding: 6px;
+  }
 }
 
 /* para Tablets*/
@@ -591,8 +740,17 @@
     padding: 1px;
   }
   .Mapa {
-    margin-left: 40px;
+    margin: auto;
     width: 25em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .tseccion2 {
     font-size: 45px;
@@ -612,41 +770,60 @@
   .fondoTitulo {
     height: 3.5em;
   }
-  .pBajada2, .pSecc3, #pSecc2 {
+  .pBajada2, #pSecc2 {
     margin: 50px auto 50px auto;
-    width: 40em;
+    width: 45em;
     padding: 20px;
     font-size: 17px;
     word-spacing: 1px;
   }
+  #nombresSec2 {
+    width: 14em;
+    margin: 5px 0px 5px 0px;
+    padding: 3px 0px 10px 0px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-indent: 0px;
+    text-align: center;
+  }
+  #pSecc2 {
+    width: 100%;
+    margin: 3px;
+    padding: 12px 3px 0px 3px;
+    font-size: 15px;
+    letter-spacing: normal;
+    text-indent: 20px;
+    text-align: center;
+  }
   #card3 {
     margin: auto;
-    width: 45em;
-    padding: 20px;
+    padding: 10px;
   }
-  .subtitulo3 {
-    font-size: 16px;
+  #nombresSec3 {
+    border-bottom: solid 2px #c55252;
   }
   .pSecc3 {
     margin: 5px 0px 5px 10px;
     padding: 2px;
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .listas3 {
     list-style-type: disc;
     text-align: left;
-    margin: 5px 5px 5px 10px;
+    margin: 3px;
+    font-size: 15px;
   }
   #Form4 {
     width: 30em;
   }
-  #Form5 {
-    width: 30em;
-    margin: auto;
-    padding: 20px;
+  .cbotones5 {
+    margin: 0px;
+    padding: 14px;
   }
-  #cajaMsj {
-    width: 30em;
+  .botones {
+    padding: 7px;
+    font-size: 15px;
   }
   .Footer2 {
     height: 13em;

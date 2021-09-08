@@ -5,15 +5,14 @@
     background-image: url(./imagenes/contacto.jpg);
     background-position: bottom;
     }
+#pSecc5{
+        margin:3px;
+        padding: 12px 3px 0px 3px; 
+        font-size: 15px;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+        color: $grisMedio;}
 
-#Form5{width:30em ;
-        margin: auto;
-        padding: 40px;
-}
-#cajaMsj{width: 100%;
-        border: none;
-
-}
 .cbotones5{margin: 15px;
         display: flex;
         flex-direction: row;

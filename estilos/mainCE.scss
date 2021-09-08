@@ -16,12 +16,7 @@
 
 
 /*NAVEGACIÓN EN SECCIONES*/
-#SegundoFondo { 
-    background-color: $blanco ;
-    height: $hHeader; 
-    width: 100%;
-    border: 3px solid $Bordo ;
-        }
+
 
 .logo {margin: 7px 3px 1px 25px;
                 padding: 3px;
@@ -47,7 +42,7 @@
                     text-align: left;}
 
 #textoNav{
-        color: $grisOscuro; 
+        color: $grisMedio; 
         font-style: normal; 
         font-size: 18px;
         font-weight: 500; 
@@ -55,8 +50,15 @@
         letter-spacing: normal;
         text-transform: initial;
         z-index: index;
-       
     }
+#menuDes{position: absolute;
+        text-align:center;
+        background-color: $blanco;
+        visibility: visible;
+        z-index: 9999;
+        overflow: scroll;
+}
+
  /*MAIN SECCIONES*/
  #cajaMain {padding: 0px;
             margin: 0px;}
@@ -75,22 +77,23 @@
             align-items: center;
             text-shadow: $grisOscuro -5px 0px 4px;}
                 
-.pBajada2{margin:70px auto 70px auto;
+.pBajada2{      margin:70px auto 50px auto;
                 padding: 30px;
                 border: 1px;
                 color: $grisMedio; 
                 font-style: normal; 
                 font-size: $tbajadas; 
                 font-family: 'Nunito', sans-serif;
-                letter-spacing: 1px;
-                word-spacing: 1px;
-                text-align: left; 
+                letter-spacing: 1.1px;
+                word-spacing: 1.5px;
+                text-align: center; 
                 text-transform: initial; 
-                line-height: 30px;
-                text-indent:30px;
+                line-height: 35px;
+                text-indent:35px;
                 }
 
 #pSecc2{@extend.pBajada2;
+        width: 100%;
         margin:3px;
         padding: 12px 3px 0px 3px;
         color: $grisMedio; 
@@ -101,7 +104,7 @@
 /*FOOTER SECCIONES*/
 
 .Footer2{@extend.Footer1;
-        height: 25em;}
+        height: 10em;}
         
 .F2Logo{@extend.F1Logo;
     margin:5px 3px 3px 3px;
@@ -114,8 +117,8 @@
 
  
 .F2Datos{@extend.F1Datos;
-    margin:25px;
-    padding: 10px;
+    margin: 10px;
+    padding: 20px 10px 10px 10px;
     }
 
 /*RESPONSIVE*/
@@ -163,60 +166,17 @@
 
 }
 
-.Mapa{margin-left:17px;
+.Mapa{margin: 10px 0px 17px 17px;
         width: 16em;}
 
-.fondoTitulo2{height: 3.5em;}
+
 
 .tseccion2 {
         font-size: 30px; 
         }
 .tseccion3 {font-size: 30px; 
                 }
-
-.pBajada2{font-size: 13px;
-        width: 22em;
-        padding: 15px;
-        margin-top:auto;
-        margin-bottom:10px;
-        }
-#card {margin: 3px;
-    padding: 15px 1px 15px 1px ;
-}
-
-#card3{ margin: auto;
-        padding:5px;
-        width: 17em;
-}
-.Footer2{height: 15em;}
-
-.F2Datos{
-    margin:6px;
-    padding: 6px;
-   }
-}
-
-.subtitulo3{
-        margin: 5px;
-        padding:3px ;
-        font-size: 15px; 
-      }
-.pSecc3{
-        margin: 5px 0px 5px 10px;
-        padding: 2px;
-        color: rgb(128, 118, 118); 
-        font-style: normal; 
-        font-size: 12px; 
-        }
-#Form4{width:21em ;
-       }
-#Form5{width:21em ;
-        margin: auto;
-        padding: 20px
-       }
-#cajaMsj{width: 100% ;
-
-       }
+.fondoTitulo2{height: 3.5em;}
 .fondoTitulo3{ 
         height: 3.5em;
         }
@@ -225,9 +185,68 @@
         }
 .fondoTitulo5{ height: 3.5em;
                 }
+.pBajada2{width: 21em;        
+        padding: 25px 10px 25px 0px;
+        margin:15px 10px 15px 20px;
+        line-height: 25px;
+        text-align: left;
+        font-size: 14px;
+        }
+
+#pSecc2{width: 100%;
+        margin:3px;
+        padding: 12px 3px 0px 0px;
+        color: $grisMedio; 
+        font-size: 15px;
+        text-align: center;
+        }
+
+#card {margin: 3px 0px 3px 0px;
+    padding: 15px 1px 25px 1px ;
+}
+
+#card3{ margin: auto;
+        padding:5px;
+        width: 17em;
+}
+
+.pSecc3{
+        margin: 5px 0px 5px 5px;
+        padding: 2px;
+        font-style: normal; 
+        font-size: 13.5px;
+        text-align: left;
+        text-indent:0px;
+        width: 17em;
+        line-height: 18px;
+        }
+
+.listas3{list-style-type:disc; 
+        text-align: left;
+        margin:5px 5px 5px 5px;
+        padding: 2px;
+        font-size: 13.5px;
+        }
+
+#nombresSec2{ width: 14em;
+                margin: 5px 0px 5px 0px;
+                padding: 3px 0px 10px 0px;
+                font-size: $tbajadas;
+                font-family: 'Nunito', sans-serif;
+                text-indent:0px;
+                text-align: center; 
+                }
+#pSecc4{
+    font-size: 15px;
+    text-indent:5px;
+    }
+#Form4{
+        margin: 0px;
+        padding: 0px;
+       }
 
 .cbotones5{margin: 0px;
-        padding: 20px;
+        padding: 12px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -236,8 +255,128 @@
 .botones { padding: 7px;
         border: 2px solid rgb(128, 118, 118);
         border-radius: 3px;
-        font-size: 15px; 
+        font-size: 13px; 
         }
+
+.Footer2{height: 15em;}
+.F2Logo{font-size: 12.5px; 
+        margin:35px 3px 3px 0px;
+        padding: 4px;
+        text-align: left;
+        }
+        
+.F2Subtitulo{font-size: 11px; 
+            margin: 3px 3px 10px 0px;
+            padding: 4px 4px 10px 4px;
+            text-align: left;
+        }
+
+.F2Datos{
+    margin: 4px 4px 4px 11px;
+    padding: 4px;
+    text-align: left;
+   }
+}
+/* 375 px*/
+@media only screen and (width: 375px)
+{.logo {margin: 7px 0px 1px 2px;
+        padding: 3px;
+        font-size: 16px;
+       }
+
+.subtitulo {margin: 1px 0px 5px 2px;
+            padding: 3px;
+            font-size: 13px;
+            word-spacing: 1px;}
+
+.tseccion2 {
+        font-size: 30px; 
+        }
+.tseccion3 {font-size: 30px; 
+                }
+.fondoTitulo2{height: 3.5em;}
+.fondoTitulo3{ height: 3.5em;
+        }
+.fondoTitulo4{ height: 3.5em;
+        }
+.fondoTitulo5{ height: 3.5em;
+                }
+.pBajada2{font-size: 15px;
+        width: 22em;
+        padding: 25px 15px 15px 15px;
+        margin-top:auto;
+        margin-bottom:10px;
+        line-height: 25px;
+        text-align: left;
+        }
+#pSecc2{width: 100%;
+        font-size:17px;
+        text-align: center;}
+
+.botones { padding: 7px;
+        border: 2px solid rgb(128, 118, 118);
+        border-radius: 3px;
+        font-size: 13px; 
+        }
+
+.Footer2{height: 15em;}
+
+.F2Datos{
+    margin:6px;
+    padding: 6px;
+   }
+}
+
+/* 425 px*/
+@media only screen and (width: 425px)
+{.logo {margin: 7px 0px 1px 2px;
+        padding: 3px;
+        font-size: 18px;
+       }
+
+.subtitulo {margin: 1px 0px 5px 2px;
+            padding: 3px;
+            font-size: 13px;
+            word-spacing: 1px;}
+
+.tseccion2 {
+        font-size: 38px; 
+        }
+.tseccion3 {font-size: 38px; 
+                }
+.fondoTitulo2{height: 3.5em;}
+.fondoTitulo3{ height: 3.5em;
+        }
+.fondoTitulo4{ height: 3.5em;
+        }
+.fondoTitulo5{ height: 3.5em;
+                }
+.pBajada2{font-size: 17px;
+        width: 22.5em;
+        padding: 25px 15px 15px 15px;
+        margin-top:auto;
+        margin-bottom:10px;
+        line-height: 30px;
+        text-align: left;
+        }
+#pSecc2{width: 100%;
+        font-size:17px;
+        text-align: center;}
+        
+
+.botones { padding: 7px;
+        border: 2px solid rgb(128, 118, 118);
+        border-radius: 3px;
+        font-size: 14px; 
+        }
+
+.Footer2{height: 15em;}
+
+.F2Datos{
+    margin:6px;
+    padding: 6px;
+   }
+}
 
 /* para Tablets*/
 @media only screen and (width: 768px)
@@ -255,8 +394,6 @@
     padding: 3px;
     font-style: normal; 
     font-size: 13px;
-  
-   
 }
 .fondoSlogan{background-position: left;
 
@@ -280,8 +417,11 @@
         padding: 1px;
         }
 
-.Mapa{margin-left:40px;
+.Mapa{margin: auto;
     width: 25em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
                 }
 
 .tseccion2 {font-size: 45px; 
@@ -290,52 +430,68 @@
             }
 .fondoTitulo2{ height: 3.5em;   }
                 
-.fondoTitulo3{ 
-                height: 3.5em;   }
-.fondoTitulo4{ 
-                height: 3.5em;   }
-.fondoTitulo{ 
-             height: 3.5em;   }                
+.fondoTitulo3{ height: 3.5em;   }
+
+.fondoTitulo4{ height: 3.5em;   }
+
+.fondoTitulo{ height: 3.5em;   }                
                                                                   
 .pBajada2{margin:50px auto 50px auto;
-                width: 40em;
+                width: 45em;
                 padding: 20px;
                 font-size: 17px;
                 word-spacing: 1px;
+                               
+                }
+#nombresSec2{ width: 14em;
+                margin: 5px 0px 5px 0px;
+                padding: 3px 0px 10px 0px;
+                font-size: $tbajadas;
+                font-family: 'Nunito', sans-serif;
+                text-indent:0px;
+                text-align: center; 
                 }
 
-#card3 {margin:auto;
-        width: 45em;
-    padding: 20px;}
+#pSecc2{width: 100%;
+        margin:3px;
+        padding: 12px 3px 0px 3px;
+        font-size:15px;
+        letter-spacing: normal;
+        text-indent:20px;
+        text-align: center;}
 
-.subtitulo3{
-        font-size: 16px; 
-        }
+#card3 {margin:auto;
+    padding: 10px;}
+
+#nombresSec3{ border-bottom:solid 2px $Bordo}
 .pSecc3{
         margin: 5px 0px 5px 10px;
         padding: 2px;
-        font-size: 13px; 
+        font-size: 15px; 
+        line-height: 25px;
         }
 
 .listas3{list-style-type:disc; 
         text-align: left;
-        margin:5px 5px 5px 10px;
+        margin:3px;
+        font-size: 15px;
         }
 
 #Form4{width:30em ;
         }
-#Form5{width:30em ;
-         margin: auto;
-         padding: 20px
-        }
-#cajaMsj{width:30em ;
 
+
+.cbotones5{margin: 0px;
+        padding: 14px;
+                        } 
+.botones { padding: 7px;
+        font-size: 15px; 
         }
+
 .Footer2{height: 13em;}
 
 .F2Datos{
     margin:6px;
     padding: 6px;
    }
-
 }
