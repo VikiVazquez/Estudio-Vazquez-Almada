@@ -16,7 +16,11 @@
 
 
 /*NAVEGACIÓN EN SECCIONES*/
-
+.cajaHeader{position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color:$blanco
+}
 
 .logo {margin: 7px 3px 1px 25px;
                 padding: 3px;
@@ -41,6 +45,7 @@
                     word-spacing: 1px; 
                     text-align: left;}
 
+
 #textoNav{
         color: $grisMedio; 
         font-style: normal; 
@@ -49,15 +54,13 @@
         font-family: 'Nunito', sans-serif;
         letter-spacing: normal;
         text-transform: initial;
-        z-index: index;
     }
-#menuDes{position: absolute;
-        text-align:center;
-        background-color: $blanco;
-        visibility: visible;
-        z-index: 9999;
-        overflow: scroll;
+
+header nav div ul li :hover{border-bottom: 1.5px $grisMedio solid;
+                           transition: .5s;
+                           
 }
+header nav div ul li :active{border-bottom: 1.5px $grisOscuro solid;}
 
  /*MAIN SECCIONES*/
  #cajaMain {padding: 0px;
@@ -76,11 +79,13 @@
             align-content: center;
             align-items: center;
             text-shadow: $grisOscuro -5px 0px 4px;}
+
+
                 
 .pBajada2{      margin:70px auto 50px auto;
                 padding: 30px;
                 border: 1px;
-                color: $grisMedio; 
+                color: $grisOscuro; 
                 font-style: normal; 
                 font-size: $tbajadas; 
                 font-family: 'Nunito', sans-serif;
@@ -107,7 +112,7 @@
         height: 10em;}
         
 .F2Logo{@extend.F1Logo;
-    margin:5px 3px 3px 3px;
+    margin:25px 3px 3px 3px;
     padding: 3px;
     }
     
@@ -135,38 +140,49 @@
             font-size: 13px;
             word-spacing: 1px;}
 
-.fondoSlogan{ background-position: left;}
+#textoNav{
+        font-size: 15px;
+        text-align: center;
+        
+    }
+.fondoSlogan{ background-position: right;}
 
-.slogan {margin-left: 22px ;
-        padding-top: 25px;         
+.slogan { width: 100%;
+        padding: 25px 0px 25px 25px;   
         font-size: 35px;
         text-align: left;
-        display: flex; 
         } 
 
 .pSecc1{margin-left:25px ; 
         width: 18em;
-        padding-left:0px;
+        padding:0px;
         font-size: 15px;
         word-spacing: 2px;
         line-height: 25px;
+        text-align: left;
     }
 
 .Footer1{height: 28em;}
 
 .F1Logo{margin:1px;
-        padding-top: 15px;
+        padding-top: 13px;
+        text-align: left;
+        letter-spacing: 2px;
+        
             }
 
 .F1Subtitulo{margin: 1px;
             padding-bottom: 15px;
+            text-align: left;
             border-bottom: 1px $blanco solid;
+                 
             }
-.F1Datos {margin: 10px 0px 1px 0px
+.F1Datos {margin: 10px 0px 1px 0px;
+        text-align: left;
 
 }
 
-.Mapa{margin: 10px 0px 17px 17px;
+.Mapa{margin: 10px 0px 17px 10px;
         width: 16em;}
 
 
@@ -185,6 +201,20 @@
         }
 .fondoTitulo5{ height: 3.5em;
                 }
+
+.segundot{margin:30px auto 20px auto;
+        padding: 30px 20px 5px 10px;
+        border-bottom: 1px solid $grisOscuro;
+        color: $grisOscuro; 
+        font-style: normal; 
+        font-size: 30px; 
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 1.1px;
+        word-spacing: 1.5px;
+        text-align: left; 
+        text-transform: initial; 
+
+}
 .pBajada2{width: 21em;        
         padding: 25px 10px 25px 0px;
         margin:15px 10px 15px 20px;
@@ -236,14 +266,25 @@
                 text-indent:0px;
                 text-align: center; 
                 }
+
+
+legend{margin: 8px auto 20px auto;
+        padding: 8px 20px 5px 0px;
+        border-bottom: 1px solid $grisOscuro;
+        font-size: 22px;        
+}
+
 #pSecc4{
-    font-size: 15px;
+    font-size: 14px;
     text-indent:5px;
     }
-#Form4{
-        margin: 0px;
-        padding: 0px;
-       }
+
+#recordar{font-size: 14px;
+        color: $grisMedio;
+        margin: 20px 20px 20px 0px;
+        padding: 10px 6px 10px 6px ;
+        font-family: 'Nunito', sans-serif;
+}
 
 .cbotones5{margin: 0px;
         padding: 12px;
@@ -288,6 +329,45 @@
             padding: 3px;
             font-size: 13px;
             word-spacing: 1px;}
+#textoNav{
+        font-size: 15px;
+        text-align: center;
+        
+    }
+.slogan { width: 100%;
+        padding: 25px 0px 25px 25px;   
+        font-size: 35px;
+        text-align: left;
+        } 
+
+.pSecc1{
+        width: 100%;
+        padding: 25px 20px 25px 20px;
+        font-size: 15px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+
+.Footer1{height: 29em;}
+
+.F1Logo{margin:1px;
+        padding-top: 25px;
+        text-align: left;
+            }
+
+.F1Subtitulo{margin: 1px;
+            padding-bottom: 15px;
+            text-align: left;
+            border-bottom: 1px $blanco solid;
+            }
+.F1Datos {margin: 10px 0px 1px 0px;
+        text-align: left;
+}
+
+.Mapa{margin: 15px 0px 17px 9px;
+        width: 20em;}
 
 .tseccion2 {
         font-size: 30px; 
@@ -301,6 +381,7 @@
         }
 .fondoTitulo5{ height: 3.5em;
                 }
+
 .pBajada2{font-size: 15px;
         width: 22em;
         padding: 25px 15px 15px 15px;
@@ -312,6 +393,45 @@
 #pSecc2{width: 100%;
         font-size:17px;
         text-align: center;}
+
+#card3{ margin: auto;
+        padding:5px;
+        width: 19em;
+}
+.pSecc3{
+        margin: 5px 0px 5px 5px;
+        padding: 2px;
+        font-style: normal; 
+        font-size: 13.5px;
+        text-align: left;
+        text-indent:0px;
+        width: 17em;
+        line-height: 18px;
+        }
+.listas3{list-style-type:disc; 
+        text-align: left;
+        margin:5px 5px 5px 5px;
+        padding: 2px;
+        font-size: 13.5px;
+        }
+legend{margin: 8px auto 20px auto;
+        padding: 8px 20px 5px 0px;
+        border-bottom: 1px solid $grisOscuro;
+        font-size: 22px;        
+}
+
+#pSecc4{
+    font-size: 14px;
+    text-indent:5px;
+    }
+
+#recordar{font-size: 14px;
+        color: $grisMedio;
+        margin: 20px 20px 20px 0px;
+        padding: 10px 6px 10px 6px ;
+        font-family: 'Nunito', sans-serif;
+}
+
 
 .botones { padding: 7px;
         border: 2px solid rgb(128, 118, 118);
@@ -338,6 +458,42 @@
             padding: 3px;
             font-size: 13px;
             word-spacing: 1px;}
+#textoNav{
+        font-size: 16.5px;
+        text-align: center; 
+    }
+
+.slogan { font-size: 35px;
+        text-align: left;
+        }    
+.pSecc1{
+        width: 100%;
+        padding: 25px 20px 25px 20px;
+        font-size: 15px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+
+.Footer1{height: 29em;}
+
+.F1Logo{margin:1px;
+        padding-top: 25px;
+        text-align: left;
+            }
+
+.F1Subtitulo{margin: 1px;
+            padding-bottom: 15px;
+            text-align: left;
+            border-bottom: 1px $blanco solid;
+            }
+.F1Datos {margin: 10px 0px 1px 0px;
+        text-align: left;
+}
+
+.Mapa{margin: 15px 0px 17px 9px;
+        width: 22em;}
 
 .tseccion2 {
         font-size: 38px; 
@@ -359,11 +515,39 @@
         line-height: 30px;
         text-align: left;
         }
+.segundot{ padding-left:40px;}
+
 #pSecc2{width: 100%;
         font-size:17px;
         text-align: center;}
-        
 
+#card3{ margin: auto;
+        padding:5px;
+        width: 22em;
+}
+.pSecc3{
+        margin: 5px 0px 5px 5px;
+        padding: 2px;
+        font-style: normal; 
+        font-size: 13.5px;
+        text-align: left;
+        text-indent:0px;
+        width: 21em;
+        line-height: 18px;
+        }
+.listas3{list-style-type:disc; 
+        text-align: left;
+        margin:5px 5px 5px 5px;
+        padding: 2px;
+        font-size: 15px;
+        }       
+legend{margin: 8px auto 20px auto;
+        padding: 8px 20px 5px 0px;
+        border-bottom: 1px solid $grisOscuro;
+        font-size: 24px;        
+}
+#recordar{font-size: 14px;
+}
 .botones { padding: 7px;
         border: 2px solid rgb(128, 118, 118);
         border-radius: 3px;
@@ -398,28 +582,45 @@
 .fondoSlogan{background-position: left;
 
     }
-.slogan {margin-left: 35px ;
+.slogan {
         padding-top: 25px;         
         font-size: 33px;        
         } 
 
-.pSecc1{width: 25em;
-        padding-top: 25px;
+.pSecc1{
+        padding: 25px;
         font-size: 18px;
-        line-height: 30px; 
+        line-height: 30px;
+        text-align: center;
     }
 
+
+
+.F1Logo{margin-top: 0px;
+            padding: 0px 5px 5px 5px;
+            border: 1px;
+            color: $blanco; 
+            font-style: normal; 
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-align: left;
+            }
+
 .F1Subtitulo{margin: 1px;
-            padding: 1px;}
+            padding: 1px;
+            font-size: 11px;
+            text-align: left;}
 
          
-.F1Datos{
+.F1Datos{font-size: 9px;
         padding: 1px;
+        text-align: left;
         }
 
-.Mapa{margin: auto;
-    width: 25em;
-    flex-direction: column;
+.Mapa{margin-left:0px;
+    padding-left: 0px;
+    width: 13em;
+    display: flex;
     justify-content: center;
     align-content: center;
                 }
@@ -437,12 +638,12 @@
 .fondoTitulo{ height: 3.5em;   }                
                                                                   
 .pBajada2{margin:50px auto 50px auto;
-                width: 45em;
+                width: 100%;
                 padding: 20px;
                 font-size: 17px;
-                word-spacing: 1px;
-                               
+                word-spacing: 1px;              
                 }
+
 #nombresSec2{ width: 14em;
                 margin: 5px 0px 5px 0px;
                 padding: 3px 0px 10px 0px;
@@ -463,6 +664,22 @@
 #card3 {margin:auto;
     padding: 10px;}
 
+.pSecc3{
+        margin: 5px 0px 5px 5px;
+        padding: 2px;
+        font-style: normal; 
+        font-size: 13.5px;
+        text-align: left;
+        text-indent:0px;
+        width: 17em;
+        line-height: 18px;
+        }
+.listas3{list-style-type:disc; 
+        text-align: left;
+        margin:5px 5px 5px 5px;
+        padding: 2px;
+        font-size: 13.5px;
+        } 
 #nombresSec3{ border-bottom:solid 2px $Bordo}
 .pSecc3{
         margin: 5px 0px 5px 10px;
@@ -477,21 +694,55 @@
         font-size: 15px;
         }
 
-#Form4{width:30em ;
-        }
 
+legend{margin: 8px auto 20px auto;
+        padding: 8px 20px 5px 0px;
+        border-bottom: 1px solid $grisOscuro;
+        font-size: 24px;        
+}
 
 .cbotones5{margin: 0px;
         padding: 14px;
                         } 
+
 .botones { padding: 7px;
         font-size: 15px; 
         }
 
 .Footer2{height: 13em;}
 
+.F2Logo{
+    margin:25px 3px 3px 3px;
+    padding: 3px;
+    text-align: center;
+    }
+    
+.F2Subtitulo{
+        padding-bottom: 6px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+ 
 .F2Datos{
-    margin:6px;
-    padding: 6px;
+    margin:4px;
+    padding: 4px;
+    text-align: center;
    }
+}
+
+/* 1024 px*/
+@media only screen and (width: 1024px)
+{.slogan{font-size: 45px;
+
+}
+.pSecc1{font-size: 20px;}
+
+.Mapa{margin-left:35px;
+        margin-top: 20px;
+        width: 16em;
+        height: 12em;
+        overflow: hidden;
+
+}
 }

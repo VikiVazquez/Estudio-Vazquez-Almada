@@ -5,19 +5,30 @@
     background-image: url(./imagenes/tramites.jpg);
     background-position: bottom;
         }
+form{padding-bottom: 60px;
 
-#Form4{
-        margin: auto;
-        padding: 20px;
 }
-#olvide{font-size: 15px;
+legend{margin:10px auto 20px auto;
+        padding: 10px 20px 5px 0px;
+        border-bottom: 1px solid $grisOscuro;
+        color: $grisOscuro; 
+        font-style: normal; 
+        font-size: 30px; 
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 1.1px;
+        word-spacing: 1.5px;
+        text-align: left; 
+        text-transform: initial; 
+
+}
+#pSecc4{
+        font-family: 'Nunito', sans-serif;
+        text-indent:20px;
+        }
+#recordar{font-size: 17px;
         font-weight: 50;
         color: $grisMedio;
-        margin: 20px;
+        margin: 20px 20px 20px 0px;
         padding: 10px 6px 10px 6px ;
         font-family: 'Nunito', sans-serif;
 }
-#pSecc4{
-    font-family: 'Nunito', sans-serif;
-    text-indent:20px;
-    }

@@ -1,78 +1,68 @@
 @charset "UTF-8";
-#primerFondo {
+.cajaHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: #e9e3e3;
-  height: 7em;
-  width: 100%;
 }
 
 .fondoSlogan {
-  background-image: url(./imagenes/agrimensura.jpg);
-  height: 40em;
-  opacity: 60%;
+  background-image: url(./imagenes/inicio.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
+  opacity: 85%;
+  border: none;
 }
 
 .slogan {
-  margin-left: 35px;
-  padding-top: 25px;
-  padding-left: 15px;
-  border: 1px;
+  width: 100%;
+  height: 10em;
+  margin: auto;
+  padding: 0px 25px 75px 45px;
   font-style: normal;
-  font-size: 45px;
+  font-size: 65px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  color: #413e3e;
+  color: white;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pSecc1 {
-  margin-left: 35px;
-  padding-top: 25px;
-  padding-left: 14px;
-  border: 1px;
-  width: 26em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin: 70px auto 50px auto;
+  padding: 25px;
+  width: 100%;
   color: #413e3e;
   font-style: normal;
   font-size: 23px;
   font-family: 'Nunito', sans-serif;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   text-transform: initial;
-  line-height: normal;
+  line-height: 35px;
   text-indent: 30px;
 }
 
 .Footer1, .Footer2 {
   height: 15em;
   width: 100%;
-  border-top: 5px solid #c55252;
   background: -webkit-gradient(linear, left top, left bottom, from(#807676), to(#413e3e));
   background: linear-gradient(to bottom, #807676, #413e3e);
 }
 
 .F1Logo, .F2Logo {
-  padding: 6px;
+  padding: 20px 5px 5px 5px;
   border: 1px;
   color: white;
   font-style: normal;
@@ -122,12 +112,26 @@
 
 .fondoT2, .fondoT3, .fondoT4, .fondoT5 {
   background-image: url(./imagenes/quienes-somos.jpg);
-  height: 7em;
+  height: 7.5em;
   width: 100%;
   background-position: center;
   opacity: 60%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.segundot {
+  margin: 30px auto 20px auto;
+  padding: 30px 20px 5px 15px;
+  border-bottom: 1px solid #413e3e;
+  color: #413e3e;
+  font-style: normal;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1.1px;
+  word-spacing: 1.5px;
+  text-align: left;
+  text-transform: initial;
 }
 
 #card {
@@ -231,23 +235,36 @@
   background-position: bottom;
 }
 
-#Form4 {
-  margin: auto;
-  padding: 20px;
+form {
+  padding-bottom: 60px;
 }
 
-#olvide {
-  font-size: 15px;
-  font-weight: 50;
-  color: #807676;
-  margin: 20px;
-  padding: 10px 6px 10px 6px;
+legend {
+  margin: 10px auto 20px auto;
+  padding: 10px 20px 5px 0px;
+  border-bottom: 1px solid #413e3e;
+  color: #413e3e;
+  font-style: normal;
+  font-size: 30px;
   font-family: 'Nunito', sans-serif;
+  letter-spacing: 1.1px;
+  word-spacing: 1.5px;
+  text-align: left;
+  text-transform: initial;
 }
 
 #pSecc4 {
   font-family: 'Nunito', sans-serif;
   text-indent: 20px;
+}
+
+#recordar {
+  font-size: 17px;
+  font-weight: 50;
+  color: #807676;
+  margin: 20px 20px 20px 0px;
+  padding: 10px 6px 10px 6px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .fondoT5 {
@@ -295,6 +312,14 @@
 }
 
 /*NAVEGACIÓN EN SECCIONES*/
+.cajaHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
 .logo {
   margin: 7px 3px 1px 25px;
   padding: 3px;
@@ -330,7 +355,16 @@
   font-family: 'Nunito', sans-serif;
   letter-spacing: normal;
   text-transform: initial;
-  z-index: index;
+}
+
+header nav div ul li :hover {
+  border-bottom: 1.5px #807676 solid;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav div ul li :active {
+  border-bottom: 1.5px #413e3e solid;
 }
 
 /*MAIN SECCIONES*/
@@ -366,7 +400,7 @@
   margin: 70px auto 50px auto;
   padding: 30px;
   border: 1px;
-  color: #807676;
+  color: #413e3e;
   font-style: normal;
   font-size: 20px;
   font-family: 'Nunito', sans-serif;
@@ -394,7 +428,7 @@
 }
 
 .F2Logo {
-  margin: 5px 3px 3px 3px;
+  margin: 25px 3px 3px 3px;
   padding: 3px;
 }
 
@@ -421,43 +455,49 @@
     font-size: 13px;
     word-spacing: 1px;
   }
+  #textoNav {
+    font-size: 15px;
+    text-align: center;
+  }
   .fondoSlogan {
-    background-position: left;
+    background-position: right;
   }
   .slogan {
-    margin-left: 22px;
-    padding-top: 25px;
+    width: 100%;
+    padding: 25px 0px 25px 25px;
     font-size: 35px;
     text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .pSecc1 {
     margin-left: 25px;
     width: 18em;
-    padding-left: 0px;
+    padding: 0px;
     font-size: 15px;
     word-spacing: 2px;
     line-height: 25px;
+    text-align: left;
   }
   .Footer1, .Footer2 {
     height: 28em;
   }
   .F1Logo, .F2Logo {
     margin: 1px;
-    padding-top: 15px;
+    padding-top: 13px;
+    text-align: left;
+    letter-spacing: 2px;
   }
   .F1Subtitulo, .F2Subtitulo {
     margin: 1px;
     padding-bottom: 15px;
+    text-align: left;
     border-bottom: 1px white solid;
   }
   .F1Datos, .F2Datos {
     margin: 10px 0px 1px 0px;
+    text-align: left;
   }
   .Mapa {
-    margin: 10px 0px 17px 17px;
+    margin: 10px 0px 17px 10px;
     width: 16em;
   }
   .tseccion2 {
@@ -477,6 +517,19 @@
   }
   .fondoTitulo5 {
     height: 3.5em;
+  }
+  .segundot {
+    margin: 30px auto 20px auto;
+    padding: 30px 20px 5px 10px;
+    border-bottom: 1px solid #413e3e;
+    color: #413e3e;
+    font-style: normal;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1.1px;
+    word-spacing: 1.5px;
+    text-align: left;
+    text-transform: initial;
   }
   .pBajada2, #pSecc2 {
     width: 21em;
@@ -529,13 +582,22 @@
     text-indent: 0px;
     text-align: center;
   }
+  legend {
+    margin: 8px auto 20px auto;
+    padding: 8px 20px 5px 0px;
+    border-bottom: 1px solid #413e3e;
+    font-size: 22px;
+  }
   #pSecc4 {
-    font-size: 15px;
+    font-size: 14px;
     text-indent: 5px;
   }
-  #Form4 {
-    margin: 0px;
-    padding: 0px;
+  #recordar {
+    font-size: 14px;
+    color: #807676;
+    margin: 20px 20px 20px 0px;
+    padding: 10px 6px 10px 6px;
+    font-family: 'Nunito', sans-serif;
   }
   .cbotones5 {
     margin: 0px;
@@ -593,6 +655,46 @@
     font-size: 13px;
     word-spacing: 1px;
   }
+  #textoNav {
+    font-size: 15px;
+    text-align: center;
+  }
+  .slogan {
+    width: 100%;
+    padding: 25px 0px 25px 25px;
+    font-size: 35px;
+    text-align: left;
+  }
+  .pSecc1 {
+    width: 100%;
+    padding: 25px 20px 25px 20px;
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: left;
+  }
+  .Footer1, .Footer2 {
+    height: 29em;
+  }
+  .F1Logo, .F2Logo {
+    margin: 1px;
+    padding-top: 25px;
+    text-align: left;
+  }
+  .F1Subtitulo, .F2Subtitulo {
+    margin: 1px;
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px white solid;
+  }
+  .F1Datos, .F2Datos {
+    margin: 10px 0px 1px 0px;
+    text-align: left;
+  }
+  .Mapa {
+    margin: 15px 0px 17px 9px;
+    width: 20em;
+  }
   .tseccion2 {
     font-size: 30px;
   }
@@ -625,6 +727,45 @@
     font-size: 17px;
     text-align: center;
   }
+  #card3 {
+    margin: auto;
+    padding: 5px;
+    width: 19em;
+  }
+  .pSecc3 {
+    margin: 5px 0px 5px 5px;
+    padding: 2px;
+    font-style: normal;
+    font-size: 13.5px;
+    text-align: left;
+    text-indent: 0px;
+    width: 17em;
+    line-height: 18px;
+  }
+  .listas3 {
+    list-style-type: disc;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+    padding: 2px;
+    font-size: 13.5px;
+  }
+  legend {
+    margin: 8px auto 20px auto;
+    padding: 8px 20px 5px 0px;
+    border-bottom: 1px solid #413e3e;
+    font-size: 22px;
+  }
+  #pSecc4 {
+    font-size: 14px;
+    text-indent: 5px;
+  }
+  #recordar {
+    font-size: 14px;
+    color: #807676;
+    margin: 20px 20px 20px 0px;
+    padding: 10px 6px 10px 6px;
+    font-family: 'Nunito', sans-serif;
+  }
   .botones {
     padding: 7px;
     border: 2px solid #807676;
@@ -653,6 +794,44 @@
     font-size: 13px;
     word-spacing: 1px;
   }
+  #textoNav {
+    font-size: 16.5px;
+    text-align: center;
+  }
+  .slogan {
+    font-size: 35px;
+    text-align: left;
+  }
+  .pSecc1 {
+    width: 100%;
+    padding: 25px 20px 25px 20px;
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: left;
+  }
+  .Footer1, .Footer2 {
+    height: 29em;
+  }
+  .F1Logo, .F2Logo {
+    margin: 1px;
+    padding-top: 25px;
+    text-align: left;
+  }
+  .F1Subtitulo, .F2Subtitulo {
+    margin: 1px;
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px white solid;
+  }
+  .F1Datos, .F2Datos {
+    margin: 10px 0px 1px 0px;
+    text-align: left;
+  }
+  .Mapa {
+    margin: 15px 0px 17px 9px;
+    width: 22em;
+  }
   .tseccion2 {
     font-size: 38px;
   }
@@ -680,10 +859,44 @@
     line-height: 30px;
     text-align: left;
   }
+  .segundot {
+    padding-left: 40px;
+  }
   #pSecc2 {
     width: 100%;
     font-size: 17px;
     text-align: center;
+  }
+  #card3 {
+    margin: auto;
+    padding: 5px;
+    width: 22em;
+  }
+  .pSecc3 {
+    margin: 5px 0px 5px 5px;
+    padding: 2px;
+    font-style: normal;
+    font-size: 13.5px;
+    text-align: left;
+    text-indent: 0px;
+    width: 21em;
+    line-height: 18px;
+  }
+  .listas3 {
+    list-style-type: disc;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+    padding: 2px;
+    font-size: 15px;
+  }
+  legend {
+    margin: 8px auto 20px auto;
+    padding: 8px 20px 5px 0px;
+    border-bottom: 1px solid #413e3e;
+    font-size: 24px;
+  }
+  #recordar {
+    font-size: 14px;
   }
   .botones {
     padding: 7px;
@@ -722,30 +935,43 @@
     background-position: left;
   }
   .slogan {
-    margin-left: 35px;
     padding-top: 25px;
     font-size: 33px;
   }
   .pSecc1 {
-    width: 25em;
-    padding-top: 25px;
+    padding: 25px;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
+  }
+  .F1Logo, .F2Logo {
+    margin-top: 0px;
+    padding: 0px 5px 5px 5px;
+    border: 1px;
+    color: white;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: left;
   }
   .F1Subtitulo, .F2Subtitulo {
     margin: 1px;
     padding: 1px;
+    font-size: 11px;
+    text-align: left;
   }
   .F1Datos, .F2Datos {
+    font-size: 9px;
     padding: 1px;
+    text-align: left;
   }
   .Mapa {
-    margin: auto;
-    width: 25em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 13em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -772,7 +998,7 @@
   }
   .pBajada2, #pSecc2 {
     margin: 50px auto 50px auto;
-    width: 45em;
+    width: 100%;
     padding: 20px;
     font-size: 17px;
     word-spacing: 1px;
@@ -799,6 +1025,23 @@
     margin: auto;
     padding: 10px;
   }
+  .pSecc3 {
+    margin: 5px 0px 5px 5px;
+    padding: 2px;
+    font-style: normal;
+    font-size: 13.5px;
+    text-align: left;
+    text-indent: 0px;
+    width: 17em;
+    line-height: 18px;
+  }
+  .listas3 {
+    list-style-type: disc;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+    padding: 2px;
+    font-size: 13.5px;
+  }
   #nombresSec3 {
     border-bottom: solid 2px #c55252;
   }
@@ -814,8 +1057,11 @@
     margin: 3px;
     font-size: 15px;
   }
-  #Form4 {
-    width: 30em;
+  legend {
+    margin: 8px auto 20px auto;
+    padding: 8px 20px 5px 0px;
+    border-bottom: 1px solid #413e3e;
+    font-size: 24px;
   }
   .cbotones5 {
     margin: 0px;
@@ -828,8 +1074,36 @@
   .Footer2 {
     height: 13em;
   }
+  .F2Logo {
+    margin: 25px 3px 3px 3px;
+    padding: 3px;
+    text-align: center;
+  }
+  .F2Subtitulo {
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
   .F2Datos {
-    margin: 6px;
-    padding: 6px;
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+  }
+}
+
+/* 1024 px*/
+@media only screen and (width: 1024px) {
+  .slogan {
+    font-size: 45px;
+  }
+  .pSecc1 {
+    font-size: 20px;
+  }
+  .Mapa {
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 16em;
+    height: 12em;
+    overflow: hidden;
   }
 }

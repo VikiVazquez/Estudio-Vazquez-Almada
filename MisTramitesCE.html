@@ -12,38 +12,38 @@
     <title>Mis Trámites</title>
   </head>
   <body>
-    <header>
-        <nav  class="navbar navbar-expand-md navbar-light">
-          <div class="container ">
-            <a class="navbar-brand" href="index.html">
-              <h1 class="logo" >Estudio Vázquez-Almada</h1>
-              <p class="subtitulo">Agrimensura y Gestoría</p>
-            </a>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-             <ul class="navbar-nav align-items-end">
-                <li class="nav-item ">
-                  <a id="textoNav"class="nav-link " href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item ">
-                    <a id="textoNav"lass="nav-link " href="QuienesSomosCE.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item ">
-                    <a id="textoNav"class="nav-link " href="ServiciosCE.html">Servicios</a>
-                </li>
-                <li class="nav-item ">
-                    <a id="textoNav"class="nav-link " href="MisTramitesCE.html">Mis Tramites</a>
-                </li>
-                <li class="nav-item ">
-                    <a id="textoNav"class="nav-link " href="ContactoCE.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
+    <header class="cajaHeader">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <h1 class="logo" >Estudio Vázquez-Almada</h1>
+            <p class="subtitulo">Agrimensura y Gestoría</p>
+          </a>
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+           <ul class="navbar-nav align-items-center">
+              <li class="nav-item ">
+                <a id="textoNav" class="nav-link " href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item ">
+                  <a id="textoNav" class="nav-link " href="QuienesSomosCE.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item ">
+                  <a id="textoNav" class="nav-link " href="ServiciosCE.html">Servicios</a>
+              </li>
+              <li class="nav-item ">
+                  <a id="textoNav" class="nav-link " href="MisTramitesCE.html">Mis Tramites</a>
+              </li>
+              <li class="nav-item ">
+                  <a id="textoNav" class="nav-link " href="ContactoCE.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-        </nav>                  
-    </header>
+        </div>
+      </nav>                  
+  </header>
     <main class="fondoTotal2">
       <div id= cajaMain class="container-fluid">
         <h1 class="tseccion2 fondoT4">Mis trámites</h1>
@@ -51,8 +51,9 @@
       </div>
       <div class="container">
         <div class="row align-items-center align-content-around justify-content-around">
-          <div class="col-md-12 col-lg-8">
-            <form id="Form4">
+          <div class="col-sm-12 col-md-8 ">
+            <form >
+                <legend>Ver mis trámites</legend>
                 <div class="form-group">
                     <label for="correo" ></label>
                     <input id="pSecc4" class="form-control" type="email" required name="correo" id="correo" placeholder="E-mail">
@@ -61,9 +62,10 @@
                     <label for="contraseña"></label>
                     <input id="pSecc4" class="form-control" type="contraseña" id="contraseña" placeholder="Contraseña">
                 </div>
-                <div>
-                    <a id="olvide" href="MisTramitesCE.html">Olvidé mi contraseña</a>
-                </div>
+                <div id="recordar">
+                  <label for="recordar">Deseo recordar mi contraseña</label>  
+                  <input  type="checkbox" name="recordar" id="1">
+              </div>
                 <div>
                     <button type="submit" class="btn btn-primary botones botones:hover" style="margin: 15px;">Ingresar</button>
                 </div>
